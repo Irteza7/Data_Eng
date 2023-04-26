@@ -94,6 +94,4 @@ r3.headers['Content-Type']
 results1 = json.loads(r3.text)
 df3 = pd.json_normalize(results1['results'])
 
-##just testing
-
 

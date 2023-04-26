@@ -48,3 +48,29 @@ tag_regex = re.compile(r'<[^>]+>')
 soup_tags = soup.find_all(string=tag_regex)
 tags = tag_regex.findall(html)
 soup.find(string='Lebron James')
+
+######
+import re
+import pandas as pd
+import requests as rq
+from bs4 import BeautifulSoup
+import html5lib
+
+
+data = pd.DataFrame(columns=["Name", "Market Cap (US$ Billion)"])
+
+
+url_scrape = 'https://web.archive.org/web/20200318083015/https://en.wikipedia.org/wiki/List_of_largest_banks'
+req_html = rq.get(url_scrape)
+req_html.headers['Content-Type']
+req_html.text[760:783]
+soup = BeautifulSoup(req_html.text, "html.parser")
+# soup.find(string = "By market capitalization").find_parent()
+soup.find_all('tbody')[2].find_all('tr')
+req_table = soup.find_all('table')[2].find_all('tr')
+req_table[1].find_all('td')[2].text.strip()
+req_table[1].find_all('a')[1].text.strip()
+
+
+
+
