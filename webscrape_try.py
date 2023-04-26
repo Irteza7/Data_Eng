@@ -82,3 +82,23 @@ for row in req_table[1:]:
 
 data.head(5)
 data.to_json('bank_marketcap.json')
+
+
+
+#### Extract data using API ####
+import requests as rq
+import json
+
+api_key = 'HN3j8UxsXIeZBhJ5XE95ZuHGxdSoq9jZ'
+url = "https://api.apilayer.com/exchangerates_data/latest?base=EUR&apikey=HN3j8UxsXIeZBhJ5XE95ZuHGxdSoq9jZ"
+response = rq.get(url)
+response.status_code
+response.headers['Content-Type']
+response.text[:10]
+res_json = json.loads(response.text)
+# currency_data = pd.json_normalize(res_json['rates'])
+currency_data = pd.DataFrame(res_json)
+currency_data.head(5)
+currency_data = currency_data['rates']
+currency_pkr = currency_data.loc['PKR',]
+currency_data.to_csv('exchange_rates_1.csv')
