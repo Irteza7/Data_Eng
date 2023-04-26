@@ -49,7 +49,9 @@ soup_tags = soup.find_all(string=tag_regex)
 tags = tag_regex.findall(html)
 soup.find(string='Lebron James')
 
-######
+###### Webscraping ######
+
+
 import re
 import pandas as pd
 import requests as rq
@@ -68,9 +70,15 @@ soup = BeautifulSoup(req_html.text, "html.parser")
 # soup.find(string = "By market capitalization").find_parent()
 soup.find_all('tbody')[2].find_all('tr')
 req_table = soup.find_all('table')[2].find_all('tr')
-req_table[1].find_all('td')[2].text.strip()
+req_table[1].find_all('td')[1].text.strip()
 req_table[1].find_all('a')[1].text.strip()
 
+market_caps = []
+banks = []
+for row in req_table[1:]:
+    market_caps.append(row.find_all('td')[2].text.strip())
+    banks.append(row.find_all('td')[1].text.strip())
+    data = pd.DataFrame({'Name': banks, 'Market Cap (US$ Billion)': market_caps})
 
-
-
+data.head(5)
+data.to_json('bank_marketcap.json')
