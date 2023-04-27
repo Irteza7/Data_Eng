@@ -88,6 +88,8 @@ data.to_json('bank_marketcap.json')
 #### Extract data using API ####
 import requests as rq
 import json
+import glob
+import pandas as pd 
 
 api_key = 'HN3j8UxsXIeZBhJ5XE95ZuHGxdSoq9jZ'
 url = "https://api.apilayer.com/exchangerates_data/latest?base=EUR&apikey=HN3j8UxsXIeZBhJ5XE95ZuHGxdSoq9jZ"
@@ -102,3 +104,18 @@ currency_data.head(5)
 currency_data = currency_data['rates']
 currency_pkr = currency_data.loc['PKR',]
 currency_data.to_csv('exchange_rates_1.csv')
+
+#### Assesment ####
+
+def extract_from_json(file_to_process):
+    dataframe = pd.read_json(file_to_process)
+    return dataframe
+file1= glob.glob('*.json')
+columns=['Name','Market Cap (US$ Billion)']
+data = pd.DataFrame(extract_from_json(file1[0]),columns=columns)
+exchange_rate = 0.7323
+# data['Market Cap (US$ Billion)'] = data['Market Cap (US$ Billion)']*exchange_rate
+# data['Market Cap (US$ Billion)'] = data['Market Cap (US$ Billion)'].round(3)
+data['Market Cap (US$ Billion)']  = (data['Market Cap (US$ Billion)'] * exchange_rate).round(3)
+data = data.rename(columns={'Market Cap (US$ Billion)': 'Market Cap (GBP$ Billion)'})
+data.head(5)
