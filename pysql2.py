@@ -42,6 +42,10 @@ except Exception as e:
 
 
 
-
 chicago_socioeconomic_data = pd.read_csv('https://data.cityofchicago.org/resource/jcxq-k9xf.csv')
-chicago_socioeconomic_data.to_sql('chicago_socioeconomic_data', engine, schema=YNR01638, if_exists='replace', index=False)
+# chicago_socioeconomic_data.to_sql('chicago_socioeconomic_data', engine, if_exists='replace', index=False)
+data_to_push = chicago_socioeconomic_data.head(5)
+chicago_socioeconomic_data.shape
+data_to_push.to_sql('did_i_get_in',engine,if_exists='append')
+
+engine.dispose
