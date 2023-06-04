@@ -5,3 +5,13 @@ exchange_rates_1.csv
 INSTRUCTOR.db
 INSTRUCTOR.db-journal
 RealWorldData.db
+sales_prediction.model/data/_SUCCESS
+sales_prediction.model/data/._SUCCESS.crc
+sales_prediction.model/data/.part-00000-1db9fe2f-4d93-4b1f-966b-3b09e72d664e-c000.snappy.parquet.crc
+sales_prediction.model/data/part-00000-1db9fe2f-4d93-4b1f-966b-3b09e72d664e-c000.snappy.parquet
+sales_prediction.model/metadata/_SUCCESS
+sales_prediction.model/metadata/._SUCCESS.crc
+sales_prediction.model/metadata/.part-00000.crc
+sales_prediction.model/metadata/part-00000
+searchterms.csv
+mlmodel.tar.gz
