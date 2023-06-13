@@ -5,9 +5,9 @@ import sqlalchemy
 import pandas as pd
 
 
-dsn_hostname = "764264db-9824-4b7c-82df-40d1b13897c2.bs2io90l08kqb1od8lcg.databases.appdomain.cloud" # e.g.: "54a2f15b-5c0f-46df-8954-7e38e612c2bd.c1ogj3sd0tgtu0lqde00.databases.appdomain.cloud"
-dsn_uid = "ynr01638"        # e.g. "abc12345"
-dsn_pwd = "IXOaPrYHTMmngIQ2"      # e.g. "7dBZ3wWt9XN6$o0J"
+dsn_hostname = "" # e.g.: "54a2f15b-5c0f-46df-8954-7e38e612c2bd.c1ogj3sd0tgtu0lqde00.databases.appdomain.cloud"
+dsn_uid = ""        # e.g. "abc12345"
+dsn_pwd = ""      # e.g. "7dBZ3wWt9XN6$o0J"
 
 dsn_driver = "{IBM DB2 ODBC DRIVER}"
 dsn_database = "BLUDB"            # e.g. "BLUDB"
