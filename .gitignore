@@ -15,5 +15,4 @@ sales_prediction.model/metadata/.part-00000.crc
 sales_prediction.model/metadata/part-00000
 searchterms.csv
 mlmodel.tar.gz
-Kafka_Nifi_Airflow_Postgres/.env
 Python_Kafka_Airflow_Postgres/.env
