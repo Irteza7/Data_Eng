@@ -21,3 +21,4 @@ for _ in range(100000):
     print(f"A {vehicle_type} has passed by the toll plaza {plaza_id} at {now}.")
     producer.send(TOPIC, message)
     sleep(random() * 2)
+
