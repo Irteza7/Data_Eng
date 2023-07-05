@@ -7,7 +7,7 @@ import pyspark
 #                          auto_offset_reset='earliest',
 #                          value_deserializer=lambda m: json.loads(m.decode('utf-8')))
 
-consumer = KafkaConsumer('bankbranch',
+consumer = KafkaConsumer('weather_topic',
                          bootstrap_servers='localhost:9092',
                          auto_offset_reset='earliest')
 
