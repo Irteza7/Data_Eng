@@ -4,11 +4,11 @@ This repository contains an Apache Airflow DAG that automates a data extraction,
 
 ## Getting Started
 
-    Make sure you have Apache Airflow installed. If not, you can install it using pip:
+Make sure you have Apache Airflow installed. If not, you can install it using pip:
 
     pip install apache-airflow
 
-    Place the DAG python script in your Airflow DAGs folder. By default, this is usually at ~/airflow/dags/.
+Place the DAG python script in your Airflow DAGs folder. By default, this is usually at ~/airflow/dags/.
 
 ## Description of the DAG
 
@@ -30,17 +30,17 @@ The DAG uses the BashOperator to execute bash commands for each task.
 
 ## Running the DAG
 
-    Start the Airflow webserver:
+Start the Airflow webserver:
 
-airflow webserver
+    airflow webserver
 
 In a separate terminal, start the Airflow scheduler:
 
     airflow scheduler
 
-    Access the Airflow UI by navigating to http://localhost:8080 in your web browser.
+Access the Airflow UI by navigating to http://localhost:8080 in your web browser.
 
-    You should see the ETL_toll_data DAG listed on the dashboard. Click on the play button to trigger the DAG manually.
+You should see the ETL_toll_data DAG listed on the dashboard. Click on the play button to trigger the DAG manually.
 
 Remember to monitor the tasks and ensure they are completing successfully. If any issues arise, you can view the logs for each task to debug.
 
