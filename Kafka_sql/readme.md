@@ -18,23 +18,23 @@ To run this script, make sure you have a MySQL server running and accessible wit
 
 To run these scripts, you need the following Python packages:
 
-    kafka-python: To connect to and interact with Kafka.
-    mysql-connector-python: To connect to and interact with MySQL.
+   - kafka-python: To connect to and interact with Kafka.
+   - mysql-connector-python: To connect to and interact with MySQL.
 
 You can install them using pip:
 
-pip install kafka-python mysql-connector-python
+    pip install kafka-python mysql-connector-python
 
 ## Running the Scripts
 
-    Start your Kafka and MySQL servers.
+   - Start your Kafka and MySQL servers.
 
-    Run the traffic_simulator.py script to start producing data to the Kafka topic:
+   - Run the traffic_simulator.py script to start producing data to the Kafka topic:
 
-python traffic_simulator.py
+    python traffic_simulator.py
 
-    In a separate terminal, run the streaming_consumer.py script to consume the data and store it in the MySQL database:
+   - In a separate terminal, run the streaming_consumer.py script to consume the data and store it in the MySQL database:
 
-python streaming_consumer.py
+    python streaming_consumer.py
 
 Please note that this is a basic simulation and doesn't handle many edge cases or potential errors that could occur in a production environment. It's intended to be a simple example of how to use Kafka and MySQL together in a Python script.
