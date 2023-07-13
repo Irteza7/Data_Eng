@@ -18,3 +18,6 @@ mlmodel.tar.gz
 Python_Kafka_Airflow_Postgres/.env
 Python_Kafka_Airflow_Postgres/config.ini
 Python_Kafka_Airflow_Postgres/src/config.ini
+Python_Kafka_Airflow_Postgres/weather_project/src/__pycache__
+Python_Kafka_Airflow_Postgres/weather_project/scripts/__pycache__
+
