@@ -4,7 +4,7 @@ import configparser
 def get_settings():
     """Load settings from the configuration file."""
     current_directory = os.getcwd()
-    file_name = "Python_Kafka_Airflow_Postgres/config.ini"
+    file_name = "Python_Kafka_Airflow_Postgres/weather_project/src/config.ini"
     file_path = os.path.join(current_directory, file_name)
     config = configparser.ConfigParser()
     config.read(file_path)

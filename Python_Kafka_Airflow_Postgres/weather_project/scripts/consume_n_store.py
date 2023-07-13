@@ -1,7 +1,7 @@
 import json
-from .kafka_init import create_kafka_consumer
-from utils import parse_data
-from postgres import setup_database
+from weather_project.src.kafka_init import create_kafka_consumer
+from weather_project.src.utils import parse_data
+from weather_project.src.postgres import setup_database
 
 def main():
     conn, cursor = None, None

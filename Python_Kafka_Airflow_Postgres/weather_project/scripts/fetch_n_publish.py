@@ -1,6 +1,6 @@
-from .api_call import fetch_weather_data
-from .kafka_init import create_kafka_producer
-from .settings import get_settings
+from weather_project.src.api_call import fetch_weather_data
+from weather_project.src.kafka_init import create_kafka_producer
+from weather_project.src.settings import get_settings
 
 # Get the settings
 settings = get_settings()
