@@ -17,7 +17,7 @@ services:
       ALLOW_PLAINTEXT_LISTENER: yes
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - ./kafka:/kafka/data
+      - ./services/kafka:/kafka/data
     depends_on:
       - zookeeper
 
@@ -30,7 +30,7 @@ services:
       - POSTGRES_USER=${POSTGRES_USER}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
     volumes:
-      - ./pgdata:/var/lib/postgresql/data
+      - ./data/pgdata:/var/lib/postgresql/data
 
   pgadmin:
     image: dpage/pgadmin4
@@ -40,4 +40,4 @@ services:
       - PGADMIN_DEFAULT_EMAIL=${PGADMIN_DEFAULT_EMAIL}
       - PGADMIN_DEFAULT_PASSWORD=${PGADMIN_DEFAULT_PASSWORD}
     volumes:
-      - ./pgadmin:/var/lib/pgadmin
+      - ./services/pgadmin:/var/lib/pgadmin
