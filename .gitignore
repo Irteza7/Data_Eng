@@ -26,3 +26,5 @@ Python_Kafka_Airflow_Postgres/weather_project/src/__pycache__/api_call.cpython-3
 Python_Kafka_Airflow_Postgres/weather_project/src/__pycache__/settings.cpython-310.pyc
 Python_Kafka_Airflow_Postgres/weather_project/src/__pycache__/settings.cpython-310.pyc
 Python_Kafka_Airflow_Postgres/weather_project/src/__pycache__/settings.cpython-310.pyc
+Python_Kafka_Airflow_Postgres/weather_project/src/__pycache__/api_call.cpython-310.pyc
+.gitignore
