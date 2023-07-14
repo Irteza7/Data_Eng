@@ -1,5 +1,5 @@
 import psycopg2
-from .settings import get_settings
+from utils.settings import get_settings
 
 def setup_database():
     # Get the settings

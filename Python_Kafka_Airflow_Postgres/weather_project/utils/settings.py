@@ -5,7 +5,7 @@ def get_settings():
     """Load settings from the configuration file."""
     # current_directory = os.path.dirname(os.path.realpath(__file__))
     current_directory = os.getcwd()
-    file_name = "src/config.ini"
+    file_name = "utils/config.ini"
     file_path = os.path.join(current_directory, file_name)
     print(f"Config file path: {file_path}")  # Add this line
     config = configparser.ConfigParser()

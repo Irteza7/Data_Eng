@@ -21,7 +21,7 @@ def main():
                 break
             for tp, messages in poll_result.items():
                 for message in messages:
-                    print(f"Raw message content: {message.value}")
+                    # print(f"Raw message content: {message.value}")
                     data = json.loads(message.value.decode('utf-8'))
                     parsed_data = parse_data(data)
                     try:

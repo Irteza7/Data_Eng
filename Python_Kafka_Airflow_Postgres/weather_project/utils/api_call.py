@@ -1,5 +1,5 @@
 import requests
-from .settings import get_settings
+from utils.settings import get_settings
 
 # Get the settings
 settings = get_settings()
