@@ -1,8 +1,8 @@
 import json
 import psycopg2
-from src.kafka_init import create_kafka_consumer
-from src.utils import parse_data
-from src.postgres import setup_database
+from utils.kafka_init import create_kafka_consumer
+from utils.util import parse_data
+from utils.postgres import setup_database
 
 
 def main():
