@@ -20,6 +20,8 @@ Python_Kafka_Airflow_Postgres/config.ini
 Python_Kafka_Airflow_Postgres/src/config.ini
 Python_Kafka_Airflow_Postgres/weather_project/src/__pycache__
 Python_Kafka_Airflow_Postgres/weather_project/__pycache__
+Python_Kafka_Airflow_Postgres/weather_project/utils/__pycache__
+
 
 Python_Kafka_Airflow_Postgres/weather_project/__pycache__/fetch_n_publish.cpython-310.pyc
 Python_Kafka_Airflow_Postgres/weather_project/src/__pycache__/api_call.cpython-310.pyc
