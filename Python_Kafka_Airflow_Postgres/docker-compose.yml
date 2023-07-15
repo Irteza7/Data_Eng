@@ -31,6 +31,16 @@ services:
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
     volumes:
       - ./data/pgdata:/var/lib/postgresql/data
+  
+  metabase:
+    image: metabase/metabase
+    ports: 
+      - 3000:3000
+    depends_on:
+      - postgres
+    volumes:
+      - ./services/metabase:/metabase-data
+              
 
 #  pgadmin:
 #    image: dpage/pgadmin4
