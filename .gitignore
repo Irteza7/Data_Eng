@@ -37,3 +37,8 @@ Python_Kafka_Airflow_Postgres/weather_project/utils/__pycache__/api_call.cpython
 Python_Kafka_Airflow_Postgres/weather_project/utils/__pycache__/api_call.cpython-310.pyc
 Python_Kafka_Airflow_Postgres/weather_project/utils/__pycache__/settings.cpython-310.pyc
 Python_Kafka_Airflow_Postgres/weather_project/utils/__pycache__/util.cpython-310.pyc
+catalog.json
+electronics.csv
+partial_data.csv
+CapstoneProject_readme.pdf
+datadump.sh
