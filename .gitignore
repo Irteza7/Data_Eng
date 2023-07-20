@@ -42,3 +42,13 @@ electronics.csv
 partial_data.csv
 CapstoneProject_readme.pdf
 datadump.sh
+json_csv/exported_data.json
+json_csv/movies_gut.json
+json_csv/movies.json
+json_csv/oltpdata.csv
+json_csv/people.json
+json_csv/people2.json
+json_csv/sales_data.csv
+misc scripts/Python Cheat Sheet - The Basics Coursera.pdf
+misc scripts/sales_data.sql
+misc scripts/exportedsql.sql
